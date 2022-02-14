@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="form">
+
+            <form action="/submit.php">
+                <div>
+                    <label for="name">Vorname</label> <br>
+                    <input type="text" name="vorname" id="vorname" required placeholder="Max"> <br>
+                </div> <br>
+
+                <div>
+                    <label for="name">Nachname</label> <br>
+                    <input type="text" name="nachname" id="nachname" required placeholder="Mustermann"> <br>
+                </div>  <br>              
+
+                <div>
+                    <label for="alter">Alter</label> <br>
+                    <input type="number" min="18" max="99" name="alter" id="alter" required placeholder="18-99" > <br>
+                </div> <br>
+
+                <div>
+                    <label for="geschlecht">Geschlecht</label> <br>
+
+                    <select name="geschlecht" id="geschlecht">
+                        <option value="" hidden disabled selected>Geschlecht</option> <br>
+                        <option value="männlich">Männlich</option>
+                        <option value="weiblich">Weiblich</option>                       
+                    </select> 
+
+                    <div> <br>
+                        <label for="erfahrung">Erfahrung</label> <br>
+                        <input type="radio" name="erfahrung" id="erfahrung"  value="3years"> +3 Jahre Erfahrung <br>
+                        <input type="radio" name="erfahrung" id="erfahrung"  value="5years"> +5 Jahre Erfahrung <br> 
+                       
+                    </div>  <br>
+
+                    <div>
+                        <label for="tätigskeitsbereich">Tätigskeitsbereich</label> <br>
+                        <input type="checkbox" name="tätigskeitsbereich" id="softwareentwickler"> Softwareentwickler <br>
+                        <input type="checkbox" name="tätigskeitsbereich" id="fahrzeugmotorentechnik"> Fahrzeugmotorentechnik <br>
+                        <input type="checkbox" name="tätigskeitsbereich" id="karroseriebau"> Karroseriebau <br>
+                        <input type="checkbox" name="tätigskeitsbereich" id="motorbau"> Motorbau <br>
+                        <input type="checkbox" name="tätigskeitsbereich" id="windkanaltester"> Windkanaltester <br> 
+                    </div> <br>
+
+                    <div>
+                        <label for="order">Laden Sie bitte Ihre Dateien hoch</label> <br>
+                        <input type="file" name="ordner" id="ordner" value="Datei"> <br>
+                    </div> <br>
+
+                    
+
+                    <div>
+                        <label for="submit">Bestätigen</label> <br>
+                        <input type="submit" name="submit" id="bestätigen" value="Bewerben">
+                    </div>
+                </div>
+            </form>
+    </div>
+   
+
+
+</body>
+</html>
